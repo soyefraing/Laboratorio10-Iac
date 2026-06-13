@@ -1,6 +1,6 @@
 // Grafana Alloy: recolecta los logs de TODOS los contenedores vía el socket de
 // Docker y los envía a Loki. Etiqueta cada flujo con el servicio de compose y un
-// "tier" (application | infrastructure) para separar logs de app e infraestructura.
+// "tier" (application | infrastructure) para separar logs de app e infraestructura
 
 discovery.docker "containers" {
   host = "unix:///var/run/docker.sock"
